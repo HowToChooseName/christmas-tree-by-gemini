@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emerald & Gold Christmas Tree</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #01160e;
+        color: #d4af37;
+        overflow: hidden;
+        font-family: 'Noto Sans SC', sans-serif;
+      }
+      canvas {
+        display: block;
+      }
+      ::selection {
+        background: #d4af37;
+        color: #01160e;
+      }
+
+      @keyframes liquid-blob {
+        0% { transform: translate(-20%, -20%) scale(1) rotate(0deg); }
+        33% { transform: translate(20%, 10%) scale(1.2) rotate(120deg); }
+        66% { transform: translate(-10%, 30%) scale(0.8) rotate(240deg); }
+        100% { transform: translate(-20%, -20%) scale(1) rotate(360deg); }
+      }
+
+      .liquid-blob-1 {
+        animation: liquid-blob 12s infinite linear;
+      }
+      .liquid-blob-2 {
+        animation: liquid-blob 18s infinite linear reverse;
+      }
+      .liquid-blob-3 {
+        animation: liquid-blob 15s infinite ease-in-out;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "three": "https://esm.sh/three@^0.182.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.2",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@^3.0.4"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
