@@ -1,5 +1,5 @@
 {
-  "name": "emerald-&-gold-cinematic-christmas-tree-2:43am",
+  "name": "copy-of-emerald-&-gold-cinematic-christmas-tree",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "three": "^0.182.0",
-    "@react-three/fiber": "^9.4.2",
-    "@react-three/drei": "^10.7.7",
-    "@react-three/postprocessing": "^3.0.4"
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "three": "0.171.0",
+    "@react-three/fiber": "9.0.0-rc.3",
+    "@react-three/drei": "10.0.0-rc.2",
+    "@react-three/postprocessing": "3.0.4"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

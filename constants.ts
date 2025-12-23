@@ -9,10 +9,10 @@ export const COLORS = {
 };
 
 export const COUNTS = {
-  NEEDLES: 80000, // Richer density for high-end feel
+  NEEDLES: 35000, // Optimized for stability on mobile/Netlify
   ORNAMENTS: 400,
   STARS: 200, 
-  SNOW: 2000,
+  SNOW: 1500,
 };
 
 export const TREE_CONFIG = {

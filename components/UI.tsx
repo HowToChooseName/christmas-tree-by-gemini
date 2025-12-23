@@ -55,28 +55,17 @@ const UI: React.FC<UIProps> = ({ state, onToggle }) => {
 
         <button 
           onClick={onToggle}
-          className="pointer-events-auto group relative px-6 py-3 sm:px-8 sm:py-4 md:px-12 md:py-5 overflow-hidden border border-white/20 bg-white/5 backdrop-blur-[32px] rounded-sm transition-all duration-700 hover:border-[#D4AF37]/50 hover:pl-8 md:hover:pl-16 active:scale-95 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] mt-1 md:mt-2"
+          className="pointer-events-auto group relative px-6 py-3 sm:px-8 sm:py-4 md:px-12 md:py-5 overflow-hidden border border-white/10 bg-white/5 backdrop-blur-2xl rounded-sm transition-all duration-700 hover:border-[#D4AF37]/40 hover:pl-8 md:hover:pl-16 active:scale-95 shadow-[0_20px_40px_rgba(0,0,0,0.4)] mt-1 md:mt-2"
         >
-          {/* Liquid Glass Blobs Background */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
-            <div className="liquid-blob-1 absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-[#D4AF37]/40 to-transparent blur-3xl rounded-full"></div>
-            <div className="liquid-blob-2 absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-white/20 to-transparent blur-3xl rounded-full"></div>
-            <div className="liquid-blob-3 absolute top-0 left-0 w-full h-full bg-radial-gradient from-[#D4AF37]/20 to-transparent blur-2xl rounded-full"></div>
-          </div>
-
-          {/* Frosted shine effect layer */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent opacity-20"></div>
-          
-          {/* Animated fill (appears on hover) */}
+          {/* Frosted shine effect */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-20"></div>
+          {/* Animated fill */}
           <div className="absolute inset-0 bg-[#D4AF37] -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 ease-in-out opacity-10"></div>
           
           <span className="relative text-[#D4AF37] tracking-[0.4em] md:tracking-[0.6em] uppercase text-xs md:text-base font-['Noto_Sans_SC'] font-black flex items-center gap-2 md:gap-4">
-            <span className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-[#D4AF37] shadow-[0_0_15px_#D4AF37] animate-pulse"></span>
+            <span className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-[#D4AF37] shadow-[0_0_12px_#D4AF37] animate-pulse"></span>
             {state === TreeState.TREE_SHAPE ? '消散' : '聚合'}
           </span>
-          
-          {/* Subtle outer glow on the glass edge */}
-          <div className="absolute inset-0 border border-white/5 pointer-events-none"></div>
         </button>
       </div>
 

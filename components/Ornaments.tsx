@@ -29,8 +29,8 @@ const Ornaments: React.FC<OrnamentsProps> = ({ state }) => {
   const tempObject = useMemo(() => new Object3D(), []);
   const tempPos = useMemo(() => new Vector3(), []);
 
-  // Updated counts: Gold and Bells stay at 1/3, Red reduced to 75% of that 1/3
-  const GOLD_COUNT = Math.floor(COUNTS.ORNAMENTS / 3);
+  // Updated counts: Gold reduced to 75% of original 1/3 share
+  const GOLD_COUNT = Math.floor((COUNTS.ORNAMENTS / 3) * 0.75);
   const RED_COUNT = Math.floor((COUNTS.ORNAMENTS / 3) * 0.75);
   const BELL_COUNT = Math.floor(COUNTS.ORNAMENTS / 3);
 
