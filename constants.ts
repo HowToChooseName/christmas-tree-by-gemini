@@ -1,3 +1,4 @@
+import { ThreeElements } from '@react-three/fiber';
 
 export const COLORS = {
   EMERALD: '#2ecc71', // Bright eye-catching green
@@ -21,3 +22,9 @@ export const TREE_CONFIG = {
   SCATTER_RADIUS: 22,
   TRANSITION_SPEED: 0.06,
 };
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements extends ThreeElements {}
+  }
+}

@@ -16,27 +16,35 @@ const UI: React.FC<UIProps> = ({ state, onToggle }) => {
   const metadataStyle = "font-['Noto_Sans_SC'] text-[#D4AF37] opacity-60 text-[10px] md:text-[11px] tracking-[0.3em] uppercase font-medium";
 
   return (
-    <div className="fixed inset-0 pointer-events-none flex flex-col justify-between p-6 md:p-12 z-10">
-      {/* Header */}
-      <div className="flex justify-between items-start">
-        <div className="pointer-events-auto">
+    <div className="fixed inset-0 pointer-events-none flex flex-col justify-between p-10 md:p-12 z-10">
+      {/* Header - Top padding adjusted to pt-2 to match footer pb-2 for symmetry */}
+      <div className="flex justify-between items-start pt-2">
+        <div className="pointer-events-auto flex flex-col w-fit">
           <h1 
             style={titleStyle}
-            className="text-5xl sm:text-6xl md:text-8xl text-[#D4AF37] tracking-tighter drop-shadow-[0_10px_30px_rgba(0,0,0,0.9)] leading-[0.8] sm:leading-[0.85] md:leading-[0.9]"
+            className="text-4xl sm:text-5xl md:text-6xl text-[#D4AF37] tracking-tighter drop-shadow-[0_10px_30px_rgba(0,0,0,0.9)] leading-[0.8] sm:leading-[0.85] md:leading-[0.9] whitespace-nowrap"
           >
             圣诞快乐
           </h1>
-          <span className="text-[10px] md:text-base text-[#D4AF37]/80 tracking-[0.4em] md:tracking-[0.6em] mt-2 md:mt-4 block uppercase font-light">
-            Merry Christmas
-          </span>
-          <div className="h-[1px] md:h-[1.5px] w-32 md:w-72 bg-gradient-to-r from-[#D4AF37] to-transparent mt-3 md:mt-6 opacity-40 shadow-[0_0_15px_#D4AF37]"></div>
-          <p className="font-['Noto_Sans_SC'] text-[#D4AF37] opacity-60 text-[10px] md:text-[14px] mt-3 md:mt-6 tracking-[0.15em] md:tracking-[0.2em] max-w-[180px] md:max-w-none">
-            烛光闪烁，愿你每个梦都香甜
+          
+          {/* Subtitle - Reduced size for wide screens, font-black for boldness */}
+          <div className="mt-2 md:mt-4 w-full">
+            <h2 
+              style={titleStyle} 
+              className="text-[#D4AF37] opacity-80 text-2xl sm:text-3xl md:text-4xl font-black tracking-wide whitespace-nowrap"
+            >
+              Merry Christmas
+            </h2>
+          </div>
+
+          <div className="h-[1px] md:h-[1.5px] w-full bg-gradient-to-r from-[#D4AF37] to-transparent mt-3 md:mt-5 opacity-40 shadow-[0_0_15px_#D4AF37]"></div>
+          <p className="font-['Noto_Sans_SC'] text-[#D4AF37] opacity-80 text-[14px] md:text-[20px] mt-2 md:mt-3 tracking-[0.15em] md:tracking-[0.2em]">
+            阳光纯手工
           </p>
         </div>
         
-        {/* Top Right: Design By */}
-        <div className="text-right hidden md:block pt-4 pointer-events-auto">
+        {/* Top Right: Design By - Visible on all screens now */}
+        <div className="text-right pt-1 pointer-events-auto">
           <p className={metadataStyle}>
             Design By<br />
             HowChooseName
@@ -69,7 +77,7 @@ const UI: React.FC<UIProps> = ({ state, onToggle }) => {
         </button>
       </div>
 
-      {/* Footer */}
+      {/* Footer - Bottom padding pb-2 used as reference for top padding */}
       <div className="flex justify-between items-end pb-2">
         <div className="flex flex-col">
           <p className={metadataStyle}>peace and joy</p>

@@ -1,8 +1,8 @@
-
 import React, { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { InstancedMesh, Object3D, Vector3 } from 'three';
 import { COUNTS, COLORS } from '../constants';
+import '../types';
 
 const SnowParticles: React.FC = () => {
   const meshRef = useRef<InstancedMesh>(null);

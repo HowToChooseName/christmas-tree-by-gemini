@@ -1,5 +1,5 @@
-
 import { Vector3, Euler } from 'three';
+import { ThreeElements } from '@react-three/fiber';
 
 export enum TreeState {
   SCATTERED = 'SCATTERED',
@@ -15,4 +15,10 @@ export interface ParticleData {
   color: string;
   type: 'needle' | 'ornament' | 'star';
   subType?: 'ball' | 'bell' | 'gift' | 'snowman' | 'leaf';
+}
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements extends ThreeElements {}
+  }
 }
