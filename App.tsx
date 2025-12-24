@@ -4,7 +4,6 @@ import { Canvas } from '@react-three/fiber';
 import { TreeState } from './types';
 import Experience from './components/Experience';
 import UI from './components/UI';
-import BackgroundMusic from './components/BackgroundMusic';
 
 const App: React.FC = () => {
   const [treeState, setTreeState] = useState<TreeState>(TreeState.SCATTERED);
@@ -18,7 +17,6 @@ const App: React.FC = () => {
   return (
     <div className="relative w-full h-screen bg-[#01160e]">
       <UI state={treeState} onToggle={toggleState} />
-      <BackgroundMusic />
       
       <Canvas
         shadows

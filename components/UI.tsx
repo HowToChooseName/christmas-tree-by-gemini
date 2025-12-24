@@ -31,7 +31,7 @@ const UI: React.FC<UIProps> = ({ state, onToggle }) => {
           <div className="mt-2 md:mt-4 w-full">
             <h2 
               style={titleStyle} 
-              className="text-[#D4AF37] opacity-80 text-2xl sm:text-3xl md:text-4xl font-black tracking-wide whitespace-nowrap"
+              className="text-[#D4AF37] opacity-80 text-2xl sm:text-4xl md:text-5xl font-black tracking-wide whitespace-nowrap"
             >
               Merry Christmas
             </h2>
