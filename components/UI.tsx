@@ -39,7 +39,7 @@ const UI: React.FC<UIProps> = ({ state, onToggle }) => {
 
           <div className="h-[1px] md:h-[1.5px] w-full bg-gradient-to-r from-[#D4AF37] to-transparent mt-3 md:mt-5 opacity-40 shadow-[0_0_15px_#D4AF37]"></div>
           <p className="font-['Noto_Sans_SC'] text-[#D4AF37] opacity-80 text-[14px] md:text-[20px] mt-2 md:mt-3 tracking-[0.15em] md:tracking-[0.2em]">
-            阳光纯手工
+            铃铛轻响，唤来整季的期盼
           </p>
         </div>
         
