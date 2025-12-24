@@ -45,9 +45,10 @@ const UI: React.FC<UIProps> = ({ state, onToggle }) => {
         
         {/* Top Right: Design By - Visible on all screens now */}
         <div className="text-right pt-1 pointer-events-auto">
-          <p className={metadataStyle}>
-            Design By<br />
-            HowChooseName
+          <p className={`${metadataStyle} [writing-mode:vertical-rl] flex flex-col gap-1 items-start text-left md:[writing-mode:horizontal-tb] md:block md:text-right`}>
+            <span>Design By</span>
+            <span className="hidden md:inline"><br /></span>
+            <span>HowChooseName</span>
           </p>
         </div>
       </div>
